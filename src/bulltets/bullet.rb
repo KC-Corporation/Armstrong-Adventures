@@ -1,7 +1,6 @@
 class Bullet
-
+    @@SPEED = nil
     def initialize(xcoord, ycoord)
-        @speed = nil
         @x = xcoord
         @y = ycoord
         @sprite = nil

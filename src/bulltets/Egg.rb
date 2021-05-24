@@ -1,3 +1,4 @@
+require 'Gosu'
 class Egg < Bullet 
 
     def initialize(x_coord,y_coord)

@@ -1,3 +1,4 @@
+require 'Gosu'
 class Lives
 
     def initialize(hp)

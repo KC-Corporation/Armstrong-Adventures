@@ -1,12 +1,14 @@
 class Egg < Bullet 
 
-    def initialize(xcoordinate,ycoordinate)
-        @@Speed = 2
+    def initialize(x_coord,y_coord)
+        super x_coord,y_coord
+        @@SPEED = 2
         @sprite = Gosu::Image.new('../../sprites/egg-before-landing.png')
-        @soundFX = Gosu::Song.new('../../music/egg_sfx.mp3')
+        @egg_spawn_sfx = Gosu::Song.new('../../music/egg_spawn_sfx.mp3')
+        @egg_break_sfx = Gosu::Song.new('../../music/egg_break_sfx.mp3')
     end
 
     def move()
-        ycordinate += @@SPEED
+        @y += @@SPEED
     end
 end

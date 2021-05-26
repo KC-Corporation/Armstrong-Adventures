@@ -1,13 +1,13 @@
 class Bullet
     @@SPEED = nil
-    @@BULLET_TYPES = {
+    # @@BULLET_TYPES = {
 
-    }
-    @@WEAPON_TYPE = 0;
-    @@BULLET_TYPE = ['r','g']
-    def initialize(xcoord, ycoord)
-        @x = xcoord
-        @y = ycoord
+    # }
+    # @@WEAPON_TYPE = 0;
+    # @@BULLET_TYPE = ['r','g']
+    def initialize()
+        @x = nil
+        @y = nil
         @sprite = nil
         @soundFX = nil
         # @powerLevel = nil

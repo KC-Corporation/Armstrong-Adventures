@@ -12,9 +12,11 @@ class Weapon
         'egg-before-landing.png'
     ]
 
-    def initialize()
-        @bullet = nil #RedBullet.new()
-        @sprite = nil
+    def initialize(bullet_type = nil)
+        @bullet = @@BULLET_TYPES[bullet_type]
+        @sprite = bullet_type == nil ? 
+                    bullet_type :
+                    Gosu::Image.new("../../sprites/#{@@BULLET_TYPES_SPRITES[bullet_type_sprite]}")
     end
 
     def setWeaponType(weapon_choice)
@@ -26,6 +28,6 @@ class Weapon
         return @bullet
     end
 
-    
+
 end
         

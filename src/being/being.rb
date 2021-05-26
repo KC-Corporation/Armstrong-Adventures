@@ -1,7 +1,4 @@
-require 'Gosu'
-
 class Being 
-
     
     def initialize(x_coord,y_coord)
         @x = x_coord
@@ -13,5 +10,4 @@ class Being
         @weapon = nil
     end
 
-    def move()
 end

@@ -1,17 +1,17 @@
 require 'Gosu'
 class Lives
 
-    def initialize(hp)
-        @hp = hp
+    def initialize(lives)
+        @lives = lives
         @lives_increase_sfx = Gosu::Song.new('../../music/lives-increase-sfx.mp3')
     end
     
     def increase()
-        @hp += 1
+        @lives += 1
     end
     
     def decrease()
-        @hp -= 1
+        @lives -= 1
     end
 
 end

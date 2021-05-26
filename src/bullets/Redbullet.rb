@@ -1,5 +1,5 @@
 require 'Gosu'
-class Red_bullet < Bullet
+class RedBullet < Bullet
 
 
     def initialize(xcoord, ycoord)

@@ -4,6 +4,7 @@ class Game < Gosu::Window
     def initialize()
         super 1920,1080,true 
         @backround = Gosu::Image.new("sprites/Backround.jpg")
+        @
 
     end
 

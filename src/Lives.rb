@@ -3,7 +3,7 @@ class Lives
 
     def initialize(lives)
         @lives = lives
-        @lives_increase_sfx = Gosu::Song.new('../../music/lives-increase-sfx.mp3')
+        #@lives_increase_sfx = Gosu::Song.new('../../music/lives-increase-sfx.mp3')
     end
     
     def increase()

@@ -1,8 +1,8 @@
 class Being 
     
-    def initialize(x_coord,y_coord)
-        @x = x_coord
-        @y = y_coord
+    def initialize()
+        @x = nil
+        @y = nil
         @sprite = nil
         @engine_sfx = nil
         @explosion_sfx = nil

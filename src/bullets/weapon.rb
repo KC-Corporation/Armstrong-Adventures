@@ -29,6 +29,5 @@ class Weapon
         return @bullet
     end
 
-
 end
         

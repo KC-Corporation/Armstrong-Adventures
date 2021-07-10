@@ -1,4 +1,5 @@
 require 'Gosu'
+
 class Lives
 
     def initialize(lives)

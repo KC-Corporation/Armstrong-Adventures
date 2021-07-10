@@ -8,7 +8,7 @@ class RedBullet < Bullet
     end
 
     def draw()
-
+    
     end
 
     def move()

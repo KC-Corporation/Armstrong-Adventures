@@ -6,7 +6,7 @@ class Player < Being
 
     def initialize()
         super
-        @sprite = Gosu::Image.new('sprites/spaceship2.png')
+        @sprite = Gosu::Image.new('../sprites/spaceship2.png')
         #@engine_sfx = Gosu::Song.new('sfx/player/red_bullet_sfx.mp3')
         #@explosion_sfx = Gosu::Song.new('sfx/player/red_bullet_sfx.mp3')
         @lives = Lives.new(5)

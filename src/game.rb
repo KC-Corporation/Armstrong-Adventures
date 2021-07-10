@@ -6,16 +6,13 @@ require_relative 'bullets/red_bullet.rb'
 require_relative 'bullets/weapon.rb'
 require_relative 'bullet_types.rb'
 
-                 
-
 class Game < Gosu::Window
 
     def initialize()
-        super 1920,1080,true 
-        @backround = Gosu::Image.new("sprites/Backround.jpg")
-        #@sprite = Gosu::Image.new('sprites/spaceship2.png')
+        super 1920, 1080, true 
+        @backround = Gosu::Image.new("../sprites/Backround.jpg")
+        #@sprite = Gosu::Image.new('../sprites/spaceship2.png')
         @player = Player.new()
-
     end
 
     def draw()
@@ -24,9 +21,7 @@ class Game < Gosu::Window
         #@sprite.draw(mouse_x,mouse_y)
     end
 
-
 end
-
 
 game = Game.new()
 game.show()

@@ -1,5 +1,6 @@
 require 'Gosu'
-require_relative 'Egg.rb', 'Redbullet.rb'
+require_relative 'egg.rb'
+require_relative 'red_bullet.rb'
 
 class Weapon
     @@BULLET_TYPES = [
@@ -8,7 +9,7 @@ class Weapon
     ]
 
     @@BULLET_TYPES_SPRITES = [
-        'standard-bullet2.png',
+        'Standard-bullet2.png',
         'egg-before-landing.png'
     ]
 
@@ -16,12 +17,12 @@ class Weapon
         @bullet = @@BULLET_TYPES[bullet_type]
         @sprite = bullet_type == nil ? 
                     bullet_type :
-                    Gosu::Image.new("../../sprites/#{@@BULLET_TYPES_SPRITES[bullet_type]}")
+                    Gosu::Image.new("sprites/#{@@BULLET_TYPES_SPRITES[bullet_type]}")
     end
 
     def setWeaponType(weapon_choice)
         @bullet = @@BULLET_TYPES[weapon_choice]
-        @sprite = Gosu::Image.new("../../sprites/#{@@BULLET_TYPES_SPRITES[weapon_choice]}")
+        @sprite = Gosu::Image.new("sprites/#{@@BULLET_TYPES_SPRITES[weapon_choice]}")
     end
 
     def fire()

@@ -9,5 +9,5 @@ class Being
         @lives = nil
         @weapon = nil
     end
-
+    
 end
